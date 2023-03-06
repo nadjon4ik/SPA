@@ -1,3 +1,12 @@
+html, #root {
+  background-image: url('assets/images/outrun-neon-dark-background-purple-1920x1080-4523.jpg');
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: overlay;
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +41,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

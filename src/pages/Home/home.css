@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+.main {
+  position: relative;
+  font-family: 'Playfair Display SC', serif;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  height: 90vh;
+}
+
+.main h4 {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 4px;
+  margin: 395px 20px 0;
+}
+
+.main h1 {
+  font-family: 'Kristi', cursive;
+  font-size: 6rem;
+  margin: 0 20px 60px;
+}

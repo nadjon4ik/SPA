@@ -1,0 +1,35 @@
+.navigation {
+  justify-content: center;
+  width: fit-content;
+  margin: 4px auto;
+  padding: 4px 9px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+.nav {
+  padding: 15px 0px;
+}
+
+.nav-link {
+  border: 1px solid transparent;
+}
+
+.nav a, .navbar-nav .nav-link.active, .nav a:hover {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 10px;
+}
+
+.nav a.active::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

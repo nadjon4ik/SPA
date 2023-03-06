@@ -1,0 +1,30 @@
+.me {
+  width: max-content;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 10px;
+  border-top-right-radius: inherit;
+  margin-bottom: 4px;
+}
+
+.other {
+  width: max-content;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 10px;
+  border-top-left-radius: inherit;
+  margin-bottom: 4px;
+}
+
+.me-position {
+  width: fit-content;
+  max-width: 50%;
+  position: sticky;
+  left: 75%;
+  margin: 0;
+}
+
+.other-position {
+  width: fit-content;
+  max-width: 50%;
+}

@@ -1,0 +1,39 @@
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.icon {
+  cursor: pointer;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  font-size: 26px;
+  color: white;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-20%, -50%);
+  display: none;
+}
+
+.icon-block {
+  display: inline-block;
+}
+
+svg+span {
+  margin-left: 8px;
+}
+
+.icon .icon-block {
+  margin-right: 40px;
+}
+
+.icon .icon-block:last-child {
+  margin-right: 0;
+}
+
+.column:hover .icon {
+  z-index: 20;
+  display: block;
+}
