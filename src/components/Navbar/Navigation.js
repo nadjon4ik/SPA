@@ -15,7 +15,7 @@ const Navigation = () => {
     <header>
       <Navbar className="navigation">
         <Stack direction="horizontal" className="content-center">
-          <Navbar.Brand href="#HOME">
+          <Navbar.Brand>
             <img
               src={logo}
               width="30"

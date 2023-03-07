@@ -9,9 +9,10 @@ const Message = (props) => {
     <>
       <div>
         {messages &&
-          messages.map((message) => {
+          messages.map((message, i) => {
             return (
               <div
+                key={i}
                 className={
                   message.who === "me" ? "me-position" : "other-position"
                 }
