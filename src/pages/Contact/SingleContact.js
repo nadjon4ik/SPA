@@ -40,7 +40,7 @@ const SingleContact = () => {
         <img
           className="AvatarImage"
           src={srcGenderAvatar}
-          alt={`${genderValue} avatar image`}
+          alt={`${genderValue} avatar`}
         />
         <div>
           <span className="me-2">ПІП:</span>

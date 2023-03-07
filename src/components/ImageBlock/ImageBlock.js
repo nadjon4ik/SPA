@@ -4,7 +4,7 @@ import { BsHeartFill } from "react-icons/bs";
 import { FaComment } from "react-icons/fa";
 
 const ImageBlock = (props) => {
-  const { title, name, likes, comments } = props.data;
+  const { name, likes, comments } = props.data;
   return (
     <div style={{ backgroundImage: `url(${name})` }} className="column">
       <div className="icon">

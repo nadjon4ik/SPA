@@ -28,6 +28,7 @@ const Message = (props) => {
                         <img
                           className="fit-content pe-2"
                           src={photo}
+                          alt={message.who}
                           width="35"
                           height="35"
                         />

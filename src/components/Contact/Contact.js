@@ -28,7 +28,7 @@ export const Contact = (props) => {
         <img
           className="AvatarImage"
           src={srcGenderAvatar}
-          alt={`${genderValue} avatar image`}
+          alt={`${genderValue} avatar`}
         />
       </div>
       <div className="Content">

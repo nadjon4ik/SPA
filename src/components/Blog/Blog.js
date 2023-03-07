@@ -22,10 +22,10 @@ function Blog(props) {
   return (
     <div className="Post">
       <header className="Post-header">
-        <img src={photo} className="Post-logo" alt="ANAKIN_IMAGE" />
+        <img src={photo} className="Post-logo" alt="ANAKIN" />
         <span className="Post-name">{name}</span>
         <div className="Post-data">
-          <img src={check} className="check" />
+          <img src={check} className="check" alt="" />
           <span className="nickname">{nickname}</span>
           <span className="data">{date}</span>
         </div>
@@ -35,19 +35,19 @@ function Blog(props) {
         <img src={image} className="Ray-Image" alt="logo" />
         <div className="Post-footer">
           <div>
-            <img src={comment} />
+            <img src={comment} alt="" />
             <span>{comments}</span>
           </div>
           <div>
-            <img src={arrows} />
+            <img src={arrows} alt="" />
             <span>{retweet}</span>
           </div>
           <div>
-            <img src={heart} />
+            <img src={heart} alt="" />
             <span>{likes}</span>
           </div>
           <div>
-            <img src={download} />
+            <img src={download} alt="" />
             <span></span>
           </div>
         </div>
