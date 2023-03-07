@@ -23,7 +23,7 @@ const SingleContact = () => {
         navigate(CONTACTS);
       }
     });
-  }, [userId]);
+  }, [userId, navigate]);
 
   const genderValue =
     contact.gender === "male"
