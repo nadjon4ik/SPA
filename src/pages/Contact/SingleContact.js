@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Stack } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-import { getContactById } from "../../shared/data";
+import { useNavigate, useParams } from "react-router-dom";
+import { CONTACTS, getContactById } from "../../shared/data";
 
 import male_avatar from "./../../assets/images/male-avatar.png";
 import female_avatar from "./../../assets/images/female-avatar.png";
@@ -10,13 +10,18 @@ import "./single.css";
 import Message from "../../components/Message/Message";
 
 const SingleContact = () => {
+  const navigate = useNavigate();
   const { userId } = useParams();
   const [contact, setContact] = useState({});
   const [correspondence, setCorrespondence] = useState([]);
   useEffect(() => {
     getContactById(userId).then((contactData) => {
-      setContact(contactData);
-      setCorrespondence(contactData.correspondence);
+      if (contactData) {
+        setContact(contactData);
+        setCorrespondence(contactData.correspondence);
+      } else {
+        navigate(CONTACTS);
+      }
     });
   }, [userId]);
 
